@@ -15,9 +15,11 @@
   font-family: "Nunito", sans-serif;
   color: var(--primary);
 }
+
 body {
   background: #fafafa;
 }
+
 a {
   text-decoration: none;
 }
@@ -65,11 +67,4 @@ textarea {
   width: 100%;
   box-sizing: border-box;
   margin: 20px auto;
-}
-
-/* error text */
-.error {
-  color: var(--warning);
-  font-size: 14px;
-  margin: 16px 0;
 }

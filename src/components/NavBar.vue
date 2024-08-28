@@ -16,7 +16,7 @@ export default {
 <style>
 .main-nav {
   text-align: center;
-  padding: 20px 5rem;
+  padding: 1.75rem 10rem;
   display: flex;
   justify-content: space-between;
   background: linear-gradient(
