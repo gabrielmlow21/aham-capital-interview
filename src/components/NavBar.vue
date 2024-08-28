@@ -1,7 +1,9 @@
 <template>
   <nav class="main-nav">
-    <router-link :to="{ name: 'FundsList' }">Funds</router-link>
-    <!-- <router-link :to="{ name: 'Investments' }">Investments</router-link> -->
+    <div class="main-nav--links">
+      <router-link :to="{ name: 'FundsList' }">Funds</router-link>
+    </div>
+    <div class="main-nav--username">John Doe</div>
   </nav>
 </template>
 
@@ -14,17 +16,14 @@ export default {
 <style>
 .main-nav {
   text-align: center;
-  margin: 40px auto;
-}
-.main-nav a {
-  display: inline-block;
-  text-decoration: none;
-  margin: 0 10px;
-  color: #999;
-  font-size: 18px;
-}
-a.router-link-active {
-  border-bottom: 2px solid #00ce89;
-  padding-bottom: 4px;
+  padding: 20px 5rem;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(
+    156.8deg,
+    rgb(30, 144, 231) 27.1%,
+    rgb(67, 101, 225) 77.8%
+  );
+  font-weight: bold;
 }
 </style>
