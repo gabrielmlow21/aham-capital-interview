@@ -1,7 +1,7 @@
 <template>
   <h1>Funds</h1>
-  <div v-for="fund in funds" :key="fund.id" class="job">
-    <router-link :to="{ name: 'FundDetails', params: { id: job.id } }">
+  <div v-for="fund in funds" :key="fund.id" class="fund">
+    <router-link :to="{ name: 'FundDetails', params: { id: fund.id } }">
       <h2>{{ fund.fundName }}</h2>
     </router-link>
   </div>
