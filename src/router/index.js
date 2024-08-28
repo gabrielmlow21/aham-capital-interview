@@ -1,7 +1,21 @@
 import { createRouter, createWebHistory } from "vue-router";
-import FundsList from "../views/FundsList.vue";
+import Funds from "../views/funds/Funds.vue";
+import FundDetails from "../views/funds/FundDetails.vue";
 
-const routes = [{ path: "/", name: "FundsList", component: FundsList }];
+const routes = [
+  { path: "/", name: "Funds", component: Funds },
+  {
+    path: "/funds",
+    name: "Funds",
+    component: Funds,
+  },
+  {
+    path: "/funds/:id",
+    name: "FundDetails",
+    component: FundDetails,
+    props: true,
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
